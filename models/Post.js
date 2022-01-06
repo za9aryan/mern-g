@@ -5,7 +5,7 @@ const postsSchema = new Schema({
     body: String,
     username: String,
     createdAt: String,
-    commets: [
+    comments: [
         {
             body: String,
             username: String,
