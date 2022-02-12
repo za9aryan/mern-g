@@ -8,12 +8,12 @@ import {
 } from "@apollo/client";
 
 const httpLink = createHttpLink({
-    uri: "http://localhost:5000"
+    uri: "http://localhost:5000/"
 })
 
 const client = new ApolloClient({
     link: httpLink,
-    cache: InMemoryCache
+    cache: new InMemoryCache()
 })
 
 export default (
